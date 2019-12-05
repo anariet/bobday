@@ -1,14 +1,14 @@
-package andrianov.dmitriy.test_app.domain;
+package andrianov.dmitriy.test_app.domain.database;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import andrianov.dmitriy.test_app.domain.database.Country;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity

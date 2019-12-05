@@ -1,14 +1,14 @@
-package andrianov.dmitriy.test_app.domain;
+package andrianov.dmitriy.test_app.domain.database;
 
+import andrianov.dmitriy.test_app.domain.database.Country;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity

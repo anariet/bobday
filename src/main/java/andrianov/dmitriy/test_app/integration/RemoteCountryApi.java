@@ -1,6 +1,6 @@
 package andrianov.dmitriy.test_app.integration;
 
-import andrianov.dmitriy.test_app.domain.Country;
+import andrianov.dmitriy.test_app.domain.database.Country;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

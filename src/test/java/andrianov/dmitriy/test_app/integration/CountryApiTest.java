@@ -1,6 +1,6 @@
 package andrianov.dmitriy.test_app.integration;
 
-import andrianov.dmitriy.test_app.domain.Country;
+import andrianov.dmitriy.test_app.domain.database.Country;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
