@@ -1,6 +1,6 @@
 package andrianov.dmitriy.test_app.integration;
 
-import andrianov.dmitriy.test_app.domain.integration.RemoteCountry;
+import andrianov.dmitriy.test_app.domain.Country;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
@@ -22,9 +22,9 @@ public class RemoteCountryApi implements CountryApi {
     private static final String ENDPOINT_GET_ALL_COUNTRIES="/rest/v2/all";
 
     @Override
-    public List<RemoteCountry> getAllCountries() {
+    public List<Country> getAllCountries() {
         try {
-            RemoteCountry[] countries = restTemplate.getForObject(host + ENDPOINT_GET_ALL_COUNTRIES, RemoteCountry[].class);
+            Country[] countries = restTemplate.getForObject(host + ENDPOINT_GET_ALL_COUNTRIES, Country[].class);
             return Objects.nonNull(countries) ?
                     Arrays.asList(countries) : Collections.emptyList();
         } catch (HttpServerErrorException | HttpClientErrorException ex){

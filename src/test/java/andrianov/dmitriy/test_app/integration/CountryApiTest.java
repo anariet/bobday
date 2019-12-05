@@ -1,6 +1,6 @@
 package andrianov.dmitriy.test_app.integration;
 
-import andrianov.dmitriy.test_app.domain.integration.RemoteCountry;
+import andrianov.dmitriy.test_app.domain.Country;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,12 +11,12 @@ import java.util.List;
 
 @SpringBootTest
 @RunWith(SpringJUnit4ClassRunner.class)
-public class RemoteCountryApiTest {
+public class CountryApiTest {
     @Autowired CountryApi countryApi;
 
     @Test
     public void getAndSerializeTest() {
-        List<RemoteCountry> list = countryApi.getAllCountries();
+        List<Country> list = countryApi.getAllCountries();
         Assert.assertNotNull(list);
     }
 }
